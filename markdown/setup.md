@@ -409,3 +409,46 @@ http://localhost:8080
 
 ![image](img.png)
 
+## Flower
+
+### #( 03/22/23@ 4:00PM )( donbuddenbaum@donbs-imac ):~/Documents/airflow
+docker compose up flower
+
+```
+[+] Running 4/4
+⠿ Container airflow-postgres-1      Created                                                                                                                      0.0s
+⠿ Container airflow-redis-1         Created                                                                                                                      0.0s
+⠿ Container airflow-airflow-init-1  Created                                                                                                                      0.0s
+⠿ Container airflow-flower-1        Created                                                                                                                      0.1s
+Attaching to airflow-flower-1
+airflow-flower-1  |
+airflow-flower-1  | BACKEND=redis
+airflow-flower-1  | DB_HOST=redis
+airflow-flower-1  | DB_PORT=6379
+airflow-flower-1  |
+airflow-flower-1  | /home/airflow/.local/lib/python3.7/site-packages/airflow/models/base.py:49 MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+airflow-flower-1  | [2023-03-22 20:02:06,558] {command.py:165} INFO - Visit me at http://0.0.0.0:5555
+airflow-flower-1  | [2023-03-22 20:02:06,602] {command.py:170} INFO - Broker: redis://redis:6379/0
+airflow-flower-1  | [2023-03-22 20:02:06,609] {command.py:173} INFO - Registered tasks:
+airflow-flower-1  | ['airflow.executors.celery_executor.execute_command',
+airflow-flower-1  |  'celery.accumulate',
+airflow-flower-1  |  'celery.backend_cleanup',
+airflow-flower-1  |  'celery.chain',
+airflow-flower-1  |  'celery.chord',
+airflow-flower-1  |  'celery.chord_unlock',
+airflow-flower-1  |  'celery.chunks',
+airflow-flower-1  |  'celery.group',
+airflow-flower-1  |  'celery.map',
+airflow-flower-1  |  'celery.starmap']
+airflow-flower-1  | [2023-03-22 20:02:06,610] {command.py:177} WARNING - Running without authentication
+airflow-flower-1  | [2023-03-22 20:02:06,626] {mixins.py:225} INFO - Connected to redis://redis:6379/0
+airflow-flower-1  | [2023-03-22 20:02:07,747] {inspector.py:42} WARNING - Inspect method active_queues failed
+airflow-flower-1  | [2023-03-22 20:02:07,750] {inspector.py:42} WARNING - Inspect method revoked failed
+airflow-flower-1  | [2023-03-22 20:02:07,772] {inspector.py:42} WARNING - Inspect method conf failed
+airflow-flower-1  | [2023-03-22 20:02:07,773] {inspector.py:42} WARNING - Inspect method reserved failed
+airflow-flower-1  | [2023-03-22 20:02:07,773] {inspector.py:42} WARNING - Inspect method registered failed
+airflow-flower-1  | [2023-03-22 20:02:07,779] {inspector.py:42} WARNING - Inspect method active failed
+airflow-flower-1  | [2023-03-22 20:02:07,784] {inspector.py:42} WARNING - Inspect method scheduled failed
+airflow-flower-1  | [2023-03-22 20:02:07,785] {inspector.py:42} WARNING - Inspect method stats failed
+```
+![img_1.png](img_1.png)
