@@ -5,7 +5,7 @@
 - [Visual Studio Code Dev Container Tutorial](https://github.com/0916dhkim/vscode-devcontainer-tutorial)
 - [Attach to a running container](https://code.visualstudio.com/docs/devcontainers/attach-container)
 
-## Postgress Container
+## Postgres Container
 
 ![img_3.png](img_3.png)
 
