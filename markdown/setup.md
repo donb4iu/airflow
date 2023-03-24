@@ -2,7 +2,8 @@
 
 ## References
 
-[Running Airflow in Docker](https://github.com/donb4iu/airflow.git)
+- [Running Airflow in Docker](https://github.com/donb4iu/airflow.git)
+- [You Can Install Airflow With Docker in Minutes!](https://pub.towardsai.net/you-can-install-airflow-with-docker-in-minutes-66a3de44374f)
 
 ## Install
 
